@@ -7,6 +7,5 @@ src/main/gen
 src/main/resources/templates.list
 src/main/resources/gitignore/*
 src/main/resources/toptal/*
-# Maven
 log/
 target/
