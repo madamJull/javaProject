@@ -1,5 +1,8 @@
 package org.example.seminar_6.hw_1.model;
 
+import java.awt.*;
+import java.util.HashMap;
+
 public class Notebook {
     private String name;
     private int ramSize;

@@ -8,17 +8,16 @@ import java.util.ArrayList;
 
 import java.util.HashSet;
 
+import java.util.List;
 import java.util.Set;
 
 public class Ex1 {
     public static void main(String[] args) {
-        Filter filter = new Filter();
-        filter.addNotebook(new Notebook("a", 8, 1000, "Linux", "black"));
-        filter.addNotebook(new Notebook("b", 16, 1000, "Linux", "silver"));
-        filter.addNotebook(new Notebook("c", 16, 1000, "Windows 10", "black"));
-        filter.addNotebook(new Notebook("d", 32, 1000, "Windows 11", "white"));
+        List notebooks = new ArrayList();
+        notebooks.add(new Notebook("a", 16, 1000, "linux", "black"));
+        notebooks.add(new Notebook("b", 32, 1000, "W", "silver"));
 
-        ArrayList list = filter.getNotebookByName("a");
-        System.out.println(list);
+    Filter filter = new Filter();
+        System.out.println(notebooks);
     }
 }
