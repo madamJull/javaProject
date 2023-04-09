@@ -6,15 +6,15 @@ import java.util.HashMap;
 public class Notebook {
     private String name;
     private int ramSize;
-    private int hddSize;
     private String osName;
+    private int hddSize;
     private String color;
 
-    public Notebook(String name, int ramSize, int hddSize, String osName, String color) {
+    public Notebook(String name, int ramSize, String osName, int hddSize, String color) {
         this.name = name;
         this.ramSize = ramSize;
-        this.hddSize = hddSize;
         this.osName = osName;
+        this.hddSize = hddSize;
         this.color = color;
     }
 
@@ -34,20 +34,20 @@ public class Notebook {
         this.ramSize = ramSize;
     }
 
-    public int getHddSize() {
-        return hddSize;
-    }
-
-    public void setHddSize(int hddSize) {
-        this.hddSize = hddSize;
-    }
-
     public String getOsName() {
         return osName;
     }
 
     public void setOsName(String osName) {
         this.osName = osName;
+    }
+
+    public int getHddSize() {
+        return hddSize;
+    }
+
+    public void setHddSize(int hddSize) {
+        this.hddSize = hddSize;
     }
 
     public String getColor() {
@@ -63,8 +63,8 @@ public class Notebook {
         return "Notebook{" +
                 "name='" + name + '\'' +
                 ", ramSize=" + ramSize +
-                ", hddSize=" + hddSize +
                 ", osName='" + osName + '\'' +
+                ", hddSize=" + hddSize +
                 ", color='" + color + '\'' +
                 '}';
     }

@@ -4,20 +4,22 @@ import org.example.seminar_6.hw_1.model.Filter;
 
 import org.example.seminar_6.hw_1.model.Notebook;
 
-import java.util.ArrayList;
-
 import java.util.HashSet;
 
-import java.util.List;
 import java.util.Set;
+
+import java.util.Scanner;
 
 public class Ex1 {
     public static void main(String[] args) {
-        List notebooks = new ArrayList();
-        notebooks.add(new Notebook("a", 16, 1000, "linux", "black"));
-        notebooks.add(new Notebook("b", 32, 1000, "W", "silver"));
+        Set <Notebook> set = new HashSet<>();
+        set.add(new Notebook("a", 16, "Linux", 1000, "black"));
+        set.add(new Notebook("b", 16, "Linux", 1000, "black"));
+        set.add(new Notebook("c", 32, "Windows", 1000, "silver"));
+        set.add(new Notebook("d", 64, "MacOS", 1000, "white"));
 
-    Filter filter = new Filter();
-        System.out.println(notebooks);
+        System.out.println(set);
+        Filter operation = new Filter(set);
+        operation.start();
     }
 }
